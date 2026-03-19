@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import { resumes } from "./constants";
 import ResumeCard from "./components/resumeCard";
 import Auth from "./routes/auth";
+import Upload from "./routes/upload";
 import { usePuterStore } from "./lib/puter";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -47,6 +48,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/auth" element={<Auth />} />
+      <Route path="/upload" element={<Upload />} />
     </Routes>
   );
 }
